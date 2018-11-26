@@ -29,6 +29,10 @@ Given("today is Friday") do
     @today = 'Friday'
 end
 
+Given("today is Saturday") do
+    raise RuntimeError, "Testing the exceptions"
+end
+
 When("I ask whether it's Friday yet") do
     @actual_answer = is_it_friday(@today)
 end
